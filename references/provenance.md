@@ -7,7 +7,7 @@ anything you change.
 
 The earlier implementation was a single `SKILL.md`, the maintainer's own instructions for a documentation
 pass, used before this repository followed the Timerise skill standard. Release 0.1.0 restructured it into
-this package. Four entries below were fixed, five kept, and ten added.
+this package. Five entries below were fixed, the fifth by the 0.1.0 agent evals, five kept, and ten added.
 
 ## Fixed
 
@@ -34,6 +34,16 @@ The ecosystem table ended at "the manifest the repo actually uses", which a mark
 not have. **Now:** critical fact 6 and *The project's own version* in [ground-truth.md](ground-truth.md): the
 newest changelog section checked against the newest tag, with a disagreement reported to `bumpv` rather
 than resolved.
+
+### 5. Two answers for a command with no script
+Found by the 0.1.0 agent evals. *Commands* in [ground-truth.md](ground-truth.md) said an undefined command
+with no same-purpose script is flagged and kept; *Edit in place* in [syncing.md](syncing.md) and critical
+fact 2 said it is removed. One agent kept `npm test` and flagged it, another removed it, and a third swapped
+`npm run lint` for `npm run build` and wrote a new sentence saying no lint or test scripts exist. **Now:**
+both references and critical fact 2 say the same thing: the command is stale, it takes the name of a script
+of the same purpose or is removed from its sentence, nothing stands in for it, and each swap or removal is
+its own line under *Changed*. Hard rule 2 names sentences and commands among what is never added, and quick
+start step 4 says the three-list report, one line per fact, is the final message.
 
 ## Kept deliberately
 

@@ -5,7 +5,8 @@ claim has been classified and the stale ones edited ([syncing.md](syncing.md)).
 
 ## The report
 
-Three lists, in this order, each item one line naming the file and the fact.
+Three lists, in this order, each item one line naming the file and the fact. The report is the final
+message; anything else the user should know, such as assumptions, comes after it.
 
 ```markdown
 **Changed**
@@ -20,7 +21,8 @@ Three lists, in this order, each item one line naming the file and the fact.
 - README.md: "dark mode toggle" feature; no theme code, toggle or `dark` class found in `app/`
 ```
 
-- **Changed** gives the old value, the new value and the file that settled it.
+- **Changed** gives the old value, the new value and the file that settled it. Every removed line and every
+  swapped or dropped command is its own item, so nothing leaves a doc unreported.
 - **Verified accurate** lists what was checked and held, so the user can tell a clean doc from an unchecked
   one. Group routine items ("all four scripts in the README exist") rather than listing each.
 - **Flagged** gives what the claim says and where you looked. It is the user's decision; do not recommend

@@ -84,9 +84,13 @@ A documented command stays only if the repository defines it.
 grep -E '^[A-Za-z0-9_.-]+:' Makefile
 ```
 
-A documented command with no definition is stale. If a script with the same purpose exists under another
-name (`check` where the doc says `lint`), the doc takes the real name; if none exists, the line is flagged,
-not deleted, since the person may intend to add the script.
+A documented command with no definition is stale, whether it was deleted or never added, so it is edited,
+not flagged. If a script with the same purpose exists under another name (`check` or `typecheck` where the
+doc says `lint`), the doc takes the real name, unless the same sentence already names that script, in which
+case the missing one is dropped. If none exists, the command is removed from its sentence, and the sentence
+goes only when nothing else is left in it. Nothing else stands in: a build is not a lint, no other command
+is added beside it, and no sentence is written to say what is missing. Each swap and removal is its own line
+under *Changed* in the report, saying the command can return once its script is added.
 
 ## Structure
 

@@ -80,6 +80,8 @@ stay with `commit` and `bumpv`. There is no `adaptation.md`; this paragraph stan
    names a range or a major takes the manifest's ([ground-truth.md](references/ground-truth.md)).
 2. **A documented command is real only if the repository defines it.** `npm run lint` with no `lint`
    script fails on the reader's first try; the script, target or CI step must exist before the line stays.
+   A missing one is stale, never flagged: it takes the name of a script of the same purpose (`lint` to
+   `typecheck`), or is removed from its sentence, and nothing is added in its place.
 3. **The docs' tree is a claim like any other.** Directories move without anyone editing the README, so
    the structure section is rebuilt from `ls` and the tracked files, never from the doc's own tree.
 4. **Agent instruction files are executed, not read.** CLAUDE.md and AGENTS.md tell agents what to run;
@@ -95,7 +97,7 @@ stay with `commit` and `bumpv`. There is no `adaptation.md`; this paragraph stan
 > read in this session from a manifest, lockfile, script, target, CI file or `ls`.
 
 > **Only facts change.** Fix a stale fact in place with a targeted edit; never rewrite prose, reorder
-> sections, restyle, or add badges, sections or features.
+> sections, restyle, or add sentences, commands, badges, sections or features.
 
 > **Never create a doc that does not exist.** Sync README.md, CLAUDE.md, AGENTS.md and `docs/` only where
 > they already are; offer a missing file in the report instead of writing it.
@@ -121,8 +123,9 @@ stay with `commit` and `bumpv`. There is no `adaptation.md`; this paragraph stan
    [ground-truth.md](references/ground-truth.md).
 3. Classify every factual claim as accurate, stale or unverifiable, then edit the stale ones in place,
    file by file: [syncing.md](references/syncing.md).
-4. Report changed, verified and flagged, then commit the doc files or stop as the user asked:
-   [reporting.md](references/reporting.md).
+4. Report changed, verified and flagged as the final message, one line per fact with the file, the old value,
+   the new value and what settled it, every removal included; then commit the doc files or stop as the user
+   asked: [reporting.md](references/reporting.md).
 
 ## Reference directory
 

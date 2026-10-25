@@ -95,7 +95,8 @@ These are never optional. Each is stated as a hard rule in `SKILL.md`, in the sa
 1. **Ground truth comes from the code, never from the docs or from memory.** A doc's own value is the claim
    under test, so it cannot also be the evidence; every value written is one read in the session.
 2. **Only facts change.** Prose, tone and section order are the author's judgement, which the code cannot
-   check; a targeted edit keeps the diff reviewable line by line.
+   check; a targeted edit keeps the diff reviewable line by line, and no sentence or command is added to
+   fill a gap.
 3. **No doc is created.** A missing file is a decision about what the project documents, so it is offered in
    the report and not written.
 4. **CHANGELOG.md is never touched.** `bumpv` writes it from the commits; two writers would contradict each

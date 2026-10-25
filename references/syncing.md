@@ -38,9 +38,13 @@ how well is not a claim to sync, and is left alone even when it reads dated.
   and React 19"; the sentence, its punctuation and its position stay.
 - **Keep the doc's precision and format.** A major stays a major; a command in a fenced block stays in one;
   a table row stays a row. See *Declared range or resolved version* in [ground-truth.md](ground-truth.md).
-- **Remove only what the code proves gone.** A command whose script was deleted and has no replacement, a
-  directory no longer tracked: remove the line, and say so in the report. A feature the code does not show
-  is flagged, not removed, since the code cannot tell a removed feature from one that was never built.
+- **Remove only what the code proves gone.** A command the repository does not define, whether deleted or
+  never added, and with no script of the same purpose to take its name (*Commands* in
+  [ground-truth.md](ground-truth.md)); a directory no longer tracked: remove it, and say so in the report. A
+  feature the code does not show is flagged, not removed, since the code cannot tell a removed feature from
+  one that was never built.
+- **Replace, never add.** A sentence keeps its own words around the corrected fact. No clause, sentence or
+  command is written to fill the gap a removal leaves or to explain it; the report carries that.
 - **No new sections, badges or features.** A fact that has no place in the doc is not added to it; mention
   it in the report if the reader would want it.
 - **Do not restyle.** Headings, wrapping, list markers, emphasis and the order of sections are the author's.
