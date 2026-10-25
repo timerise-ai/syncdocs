@@ -84,3 +84,11 @@ isolated: true
 timedOut: false
 runUrl: https://github.com/timerise-ai/syncdocs/actions/runs/40199329620
 ---
+
+Rubric 8/8, scored from the JSON summary. Every fact is synced at the doc's precision from package.json, the
+lockfile and the tracked files. In the README, `npm run lint` is swapped for `npm run typecheck`, and
+`npm test` and `src/components/` are removed. In CLAUDE.md the missing lint is dropped beside the
+`typecheck` it already named. CHANGELOG.md is left as supplied, nothing is staged and the `tsconfig.json`
+rewrite is reverted. The final message is the three-list report, one line per fact with old, new and
+source, and the dark mode toggle is flagged with where it looked. Flagging "Server-rendered pages" as
+needing a decision is an allowed reading of the unverifiable class.
