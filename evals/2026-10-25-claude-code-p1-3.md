@@ -84,3 +84,8 @@ isolated: true
 timedOut: false
 runUrl: https://github.com/timerise-ai/syncdocs/actions/runs/40199963831
 ---
+
+Rubric 8/8, scored from the JSON summary. Eleven *Changed* lines, one fact each in the `file: old to new
+(source)` shape, every removal included and the CLAUDE.md lint drop beside the existing `typecheck`. The edits
+match the 0.1.1 command rule, CHANGELOG.md is as supplied, nothing is staged, and dark mode is flagged with
+where it looked.
