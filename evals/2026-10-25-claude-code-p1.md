@@ -84,3 +84,11 @@ isolated: true
 timedOut: false
 runUrl: https://github.com/timerise-ai/syncdocs/actions/runs/40198188736
 ---
+
+Rubric 8/8, scored from the JSON summary. Versions synced at the doc's major precision (Next.js 16, React 19,
+from package.json and the lockfile), yarn to npm from `package-lock.json`, `src/app/` to `app/`, the untracked
+`src/components/` line and the undefined `npm test` removed and reported, `npm run lint` swapped for
+`npm run typecheck` as the report example in reporting.md shows. The dark mode toggle is kept and flagged with
+where it looked; CHANGELOG.md saved as supplied; nothing committed; the `next build` rewrite of
+`tsconfig.json` reverted. Removing `npm test` follows syncing.md, *Edit in place*; ground-truth.md,
+*Commands*, says the opposite (flag and keep), which is the skill's contradiction, not this run's deviation.

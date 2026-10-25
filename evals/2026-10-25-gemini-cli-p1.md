@@ -84,3 +84,10 @@ isolated: true
 timedOut: false
 runUrl: https://github.com/timerise-ai/syncdocs/actions/runs/40198188736
 ---
+
+Rubric 8/8, scored from the JSON summary. Versions at the doc's precision, yarn to npm, `src/app/` to `app/`,
+the untracked `src/components/` removed, `npm run lint` to `npm run typecheck` in both files, CHANGELOG.md left
+as supplied, nothing committed, and a three-list report naming the source of each change. It kept the
+undefined `npm test` and flagged it, as ground-truth.md, *Commands*, says ("the line is flagged, not
+deleted"); syncing.md says to remove it. The run follows a documented branch of a contradiction in the skill,
+so it is not scored against the agent.
