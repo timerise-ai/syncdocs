@@ -44,6 +44,9 @@ both references and critical fact 2 say the same thing: the command is stale, it
 of the same purpose or is removed from its sentence, nothing stands in for it, and each swap or removal is
 its own line under *Changed*. Hard rule 2 names sentences and commands among what is never added, and quick
 start step 4 says the three-list report, one line per fact, is the final message.
+The 0.1.1 evals then showed one agent grouping several facts per *Changed* line, read from the permission
+to group routine items; [reporting.md](reporting.md) now limits grouping to *Verified accurate* and gives
+*Changed* the shape `file: old to new (source)`.
 
 ## Kept deliberately
 

@@ -123,8 +123,8 @@ stay with `commit` and `bumpv`. There is no `adaptation.md`; this paragraph stan
    [ground-truth.md](references/ground-truth.md).
 3. Classify every factual claim as accurate, stale or unverifiable, then edit the stale ones in place,
    file by file: [syncing.md](references/syncing.md).
-4. Report changed, verified and flagged as the final message, one line per fact with the file, the old value,
-   the new value and what settled it, every removal included; then commit the doc files or stop as the user
+4. Report changed, verified and flagged as the final message. *Changed* is one fact per line, never grouped,
+   as `file: old to new (source)`, every removal included; then commit the doc files or stop as the user
    asked: [reporting.md](references/reporting.md).
 
 ## Reference directory

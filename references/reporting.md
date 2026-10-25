@@ -22,9 +22,11 @@ message; anything else the user should know, such as assumptions, comes after it
 ```
 
 - **Changed** gives the old value, the new value and the file that settled it. Every removed line and every
-  swapped or dropped command is its own item, so nothing leaves a doc unreported.
+  swapped or dropped command is its own item, so nothing leaves a doc unreported. *Changed* is never grouped:
+  one fact in one file per line, in the shape `file: old to new (source)`, as in the example above.
 - **Verified accurate** lists what was checked and held, so the user can tell a clean doc from an unchecked
-  one. Group routine items ("all four scripts in the README exist") rather than listing each.
+  one. Here, and only here, group routine items ("all four scripts in the README exist") rather than listing
+  each.
 - **Flagged** gives what the claim says and where you looked. It is the user's decision; do not recommend
   deleting a feature claim unless the user asks what you would do.
 
