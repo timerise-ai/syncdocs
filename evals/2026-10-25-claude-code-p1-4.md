@@ -84,3 +84,7 @@ isolated: true
 timedOut: false
 runUrl: https://github.com/timerise-ai/syncdocs/actions/runs/40200558033
 ---
+
+Rubric 8/8, scored from the JSON summary. Round 3 of the eval loop, a dispatch re-run of 0.1.2. Eleven
+one-fact *Changed* lines with sources, every removal included, CHANGELOG.md as supplied, nothing staged, the
+`tsconfig.json` build rewrite reverted, and dark mode flagged with where it looked.
